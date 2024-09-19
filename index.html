@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando pelos astros - Astrolábio</title>
+    <link rel="shortcut icon" type="imagex/png" href="./assets/svg/planeta.svg">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap-reboot.css">
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+      <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-md-0 me-md-auto text-white link-body-emphasis text-decoration-none">
+                <img class="bi" width="40" height="32" role="img" aria-label="Bootstrap" src="./assets/svg/planeta.svg" alt="">
+                <span class="fs-4 text-white">Dia Astronômico</span>
+              </a>
+    
+            <ul class="nav nav-pills">
+              <li><a href="../astrolabio/index.html" class="nav-link px-2 text-secondary">Altura do objeto</a></li>
+              <li><a href="../astrolabio/altura_nuvens.html" class="nav-link px-2 text-white">Altura das nuvens</a></li>
+            </ul>
+    
+          </div>
+        </div>
+      </header>
+      
+    <div class="cabecalho">
+        <h1 class="h1">Navegando pelos astros - Astrolábio</h1>
+        <p class="h5">Metódo de cálculo com uma observação</p>
+    </div>
+    <div class="container-sm p-4">
+        <div class="row justify-content-center g-10">
+            <div class="col-sm-3">
+                <div class="form" action="#" method="post">
+                    <div class="mb-3">
+                        <label for="angulo" class="form-label">Ângulo (em graus): </label>
+                        <input type="number" class="form-control" id="angulo" placeholder="Ex.: 8">
+                      </div>
+                      <div class="mb-3">
+                        <label for="altura_aluno" class="form-label">Sua estatura (em metro): </label>
+                        <input type="number" class="form-control" id="altura_aluno" placeholder="Ex.: 1.5">
+                        <div class="form-text" id="basic-addon4">* Estatura do observador.</div>
+                      </div>
+                      
+        
+                      <div class="mb-3">
+                        <label for="distancia" class="form-label">Distância (em metro): </label>
+                        <input type="number" class="form-control" id="distancia" placeholder="Ex.: 9.37">
+                      </div>
+        
+                    <button class="btn btn-primary" type="button" onclick="calcularAltura()">Calcular altura</button>
+                </div>
+                <p id="resultado" class="resultado text fs-6 fw-medium text-primary"></p>
+            </div>
+            <div class="col-sm-6">
+                <p class="text fs-5">É possível fazer o cálculo da altura de grandes objetos, como de um prédio,
+                     aplicando os mesmos princípios de triangulação
+                    utilizados para determinar a posição de corpos celestes. </p>
+                <p class="text fs-6 fw-medium">Esta atividade nos permitirá
+                    explorar a utilidade prática do astrolábio, mesmo em ambientes urbanos e constatar
+                     sua aplicação na resolução de problemas cotidianos.</p>
+                <figure class="figure">
+                    <img src="./assets/img/formula.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption text-end">Encontrando a altura com trigonometria.</figcaption>
+                  </figure>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+    <script src="script.js"></script>
+</body>
+</html>

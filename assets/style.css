@@ -1,0 +1,75 @@
+
+:root {
+    --cor_tema: royalblue;
+    --cor_tema_escura: rgb(58, 95, 204);
+    --alerta: red;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+body{
+    background-color: var(--cor_tema);
+    color: aliceblue;
+
+    
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formulario__campos input {
+    background-color: rgba(218, 223, 226, 0.507);
+    border: none;
+    padding: .5rem;
+    outline-color: var(--cor_tema);
+    border-radius: 5px;
+}
+
+.formulario__campos input:focus {
+    color: var(--cor_tema)
+}
+
+.alerta {
+    color: var(--alerta);
+}
+
+.formulario__botao {
+    background-color: var(--cor_tema);
+    color: aliceblue;
+    padding: .5rem;
+    border: none; 
+    border-radius: 8px;
+}
+
+.formulario__botao:hover{
+    background-color: var(--cor_tema_escura);
+    cursor: pointer;
+}
+
+.resultado {
+    padding: .5rem;
+    color: var(--cor_tema);
+
+}
